@@ -17,26 +17,7 @@ RUN npm install
 COPY . .
 
 # Port
-EXPOSE 8080
+EXPOSE 80
 
 # npm run start CMD [ "npm", "start" ]
 CMD [ "node", "server.js" ]
-
-# docker build -t mruanova/node-web-app .
-# docker images
-# docker run -p 49160:8080 -d mruanova/node-web-app
-
-# Get container ID (all users)
-# docker ps -a
-
-# Print app output
-# docker logs <container id>
-
-# Example
-# Running on http://localhost:8080
-
-# test
-# curl -i localhost:8080/ap/members
-
-# docker tag local-image:tagname reponame:tagname
-# docker push reponame:tagname
