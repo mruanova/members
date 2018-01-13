@@ -6,8 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 class Members extends Component {
   constructor(props) {
     super(props);
-    const url = 'http://localhost:3001/api/members';
-    fetch(url).then(response => {return response.json();}).then(members => {
+    fetch(this.props.url).then(response => {return response.json();}).then(members => {
       let output = '';
       members.data.forEach(function(member){
         output += `<div class="member">
@@ -25,7 +24,5 @@ class Members extends Component {
     return null;
   }
 }
-
-ReactDOM.render(<Members />, document.getElementById("root"));
 
 export default Members;
