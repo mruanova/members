@@ -3,7 +3,7 @@
   float: left;
   height: 300px;
   width: 300px;
-  margin-bottom: 10px;
+  margin-bottom: 1px;
 }
 img:hover {
   border: 5px solid orange;

@@ -6,10 +6,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 class Members extends Component {
   constructor(props) {
     super(props);
-    const url = "https://api.github.com/orgs/reactjs/members";
-    fetch(url).then(response => {return response.json();}).then(data => {
+    const url = 'http://localhost:3001/api/members';
+    fetch(url).then(response => {return response.json();}).then(members => {
       let output = '';
-      data.forEach(function(member){
+      members.data.forEach(function(member){
         output += `<div class="member">
         <a href="${member.html_url}" target="_blank">
         <img src='${member.avatar_url}' alt='avatar' class='avatar'>
