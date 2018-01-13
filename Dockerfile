@@ -25,11 +25,14 @@ CMD [ "node", "server.js" ]
 # docker images
 # docker run -p 49160:8080 -d mruanova/node-web-app
 
-# Get container ID
-# docker ps
+# Get container ID (all users)
+# docker ps -a
 
 # Print app output
 # docker logs <container id>
 
 # Example
 # Running on http://localhost:8080
+
+# test
+# curl -i localhost:8080/ap/members
