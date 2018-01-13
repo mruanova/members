@@ -62,7 +62,7 @@ body {
 
 .dropdown-item {
   color: white !important;
-  font-size: 25px;
+  font-size: 64px;
 }
 .dropdown-item:hover {
   border-left: 5px solid orange;
