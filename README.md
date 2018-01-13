@@ -2,13 +2,13 @@
 
 npm install
 
-# react.js
+# start the server in the first terminal (node.js)
+
+nodemon ./src/server.js
+
+# start the app in the second terminal (react.js)
 
 npm run start
-
-# node.js
-
-nodemon server.js
 
 # browser
 
