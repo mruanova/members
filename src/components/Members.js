@@ -9,11 +9,11 @@ class Members extends Component {
     const url = "https://api.github.com/orgs/reactjs/members";
     fetch(url).then(response => {return response.json();}).then(data => {
       let output = '';
-      data.forEach(function(contact){
+      data.forEach(function(member){
         output += `<div class="member">
-        <a href="${contact.html_url}" target="_blank">
-        <img src='${contact.avatar_url}' alt='avatar' class='avatar'>
-        <button type="button" class="btn btn-warning name">${contact.login}</button>
+        <a href="${member.html_url}" target="_blank">
+        <img src='${member.avatar_url}' alt='avatar' class='avatar'>
+        <button type="button" class="btn btn-warning name">${member.login}</button>
         </a>
         </div>`;
       });
