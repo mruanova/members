@@ -25,7 +25,7 @@ docker run -p 49160:80 -d mruanova/node-web-app
 docker ps -a
 
 ### Print app output
-### docker logs <container id>
+docker logs <container id>
 
 ## Browser
 http://localhost:80
@@ -34,7 +34,8 @@ http://localhost:80
 curl -i localhost:80/ap/members
 
 ### to tag 
-#### docker tag local-image:tagname reponame:tagname
-#### docker push reponame:tagname
+docker tag local-image:tagname reponame:tagname
+docker push reponame:tagname
 
-#### to stop use : ctrl +p +q
+## to stop use
+ctrl +p +q
