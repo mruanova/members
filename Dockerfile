@@ -1,3 +1,4 @@
+# https://nodejs.org/en/docs/guides/nodejs-docker-webapp/
 FROM node:carbon
 
 # Create app directory
@@ -36,3 +37,6 @@ CMD [ "node", "server.js" ]
 
 # test
 # curl -i localhost:8080/ap/members
+
+# docker tag local-image:tagname reponame:tagname
+# docker push reponame:tagname
