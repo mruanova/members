@@ -9,3 +9,7 @@ npm run start
 # node.js
 
 nodemon server.js
+
+# browser
+
+http://localhost:3000/
