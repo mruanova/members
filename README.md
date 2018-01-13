@@ -37,5 +37,5 @@ curl -i localhost:80/ap/members
 docker tag local-image:tagname reponame:tagname
 docker push reponame:tagname
 
-## to stop use
+### to stop use
 ctrl +p +q
