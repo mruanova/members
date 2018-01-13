@@ -15,8 +15,8 @@ RUN npm install
 # Bundle app source
 COPY . .
 
-# 8080 ?
-EXPOSE 3001
+# Port
+EXPOSE 8080
 
 # npm run start CMD [ "npm", "start" ]
 CMD [ "node", "server.js" ]
@@ -32,4 +32,4 @@ CMD [ "node", "server.js" ]
 # docker logs <container id>
 
 # Example
-# Running on http://localhost:3001
+# Running on http://localhost:8080

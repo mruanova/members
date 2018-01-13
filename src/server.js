@@ -3,7 +3,7 @@ var express  = require( 'express' ),
     path     = require( 'path' ),
     cors     = require('cors'),
     root     = __dirname,
-    port     = process.env.PORT || 3001,
+    port     = process.env.PORT || 8080,
     app      = express();
 
 app.use(bp.json())

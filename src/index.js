@@ -5,7 +5,7 @@ import Members from './components/Members';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(<Members
-    url='http://localhost:3001/api/members'
+    url='http://localhost:8080/api/members'
     pollInterval={2000} />, 
     document.getElementById('root'));
 registerServiceWorker();
