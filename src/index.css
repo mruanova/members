@@ -18,6 +18,14 @@ body {
 }
 
 /* The sidebar menu */
+#navbar-mobile {
+  display: none;
+} 
+
+.navbar {
+  min-height: 50px;
+}
+
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
   width: 120px; /* Set the width of the sidebar */
@@ -52,9 +60,21 @@ body {
   padding: 0px 10px;
 }
 
+.dropdown-item {
+  color: white !important;
+  font-size: 25px;
+}
+.dropdown-item:hover {
+  border-left: 5px solid orange;
+  color: orange !important;
+}
+
 @media only screen and (max-width: 767px) {
   .sidenav {
     display: none;
+  }
+  #navbar-mobile {
+    display: block;
   }
   #root {
     margin-left: 0;
