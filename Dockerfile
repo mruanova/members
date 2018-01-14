@@ -2,7 +2,7 @@
 FROM node:carbon
 
 # Create app directory
-WORKDIR /usr/src/app
+WORKDIR /usr/src/app/src/server.js
 
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
@@ -17,7 +17,7 @@ RUN npm install
 COPY . .
 
 # Port
-EXPOSE 80
+EXPOSE 8080
 
 # npm run start CMD [ "npm", "start" ]
-CMD [ "node", "server.js" ]
+CMD [ "node", "src/server.js" ]
