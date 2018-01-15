@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: linear-gradient(to bottom,#337ab7 0,#265a88 100%);
+  background-color: white;
 }
 
 #root {
@@ -26,6 +26,25 @@ body {
   min-height: 50px;
 }
 
+.dropdown-item {
+  color: white !important;
+  font-size: 64px;
+}
+
+.dropdown-item:hover {
+  background-color: #2b3640 !important;
+  border-left: 5px solid orange;
+  color: #f1f1f1 !important;
+  text-decoration: none;
+}
+
+.dropdown-item:focus {
+  background-color: #2b3640 !important;
+  border-left: 5px solid orange;
+  color: #f1f1f1 !important;
+  text-decoration: none;
+}
+
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
   width: 120px; /* Set the width of the sidebar */
@@ -33,9 +52,9 @@ body {
   z-index: 0; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: #111; /* Black */
+  background-color:#3c4b5a;
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 55px;
+  padding-top: 50px;
 }
 
 /* The navigation menu links */
@@ -43,30 +62,23 @@ body {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #f1f1f1;
   display: block;
+  text-decoration: none;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-  background-color: #818181;
+  background-color: #2b3640;
   border-left: 5px solid orange;
   color: #f1f1f1;
+  text-decoration: none;
 }
 
 /* Style page content */
 .main {
   margin-left: 160px; /* Same as the width of the sidebar */
   padding: 0px 10px;
-}
-
-.dropdown-item {
-  color: white !important;
-  font-size: 64px;
-}
-.dropdown-item:hover {
-  border-left: 5px solid orange;
-  color: orange !important;
 }
 
 @media only screen and (max-width: 767px) {
