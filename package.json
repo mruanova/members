@@ -8,9 +8,11 @@
     "cors": "^2.8.4",
     "jquery": "^3.2.1",
     "popper": "^1.0.1",
+    "popper.js": "^1.12.9",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-scripts": "1.0.17"
+    "react-scripts": "1.0.17",
+    "sass": "^1.0.0-beta.4"
   },
   "scripts": {
     "start": "react-scripts start",
