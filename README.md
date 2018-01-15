@@ -20,9 +20,6 @@ docker run -p 49160:8080 -d mruanova/node-web-app
 ## Get container ID:
 docker ps
 
-### Print app output:
-docker logs <container id>
-
 ## Test in the terminal/console:
 curl -i localhost:49160/api/members
 
